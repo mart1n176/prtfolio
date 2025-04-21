@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+ <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.project {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #555;
+}
+
+footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Hello, I'm Martin</h1>
+    <p>Junior Web Developer | Passionate about learning and building</p>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>Simple, clean portfolio built with HTML, CSS, and JS. Fully responsive and hosted on GitHub Pages.</p>
+    </div>
+    <div class="project">
+      <h3>Landing Page</h3>
+      <p>Responsive landing page using Flexbox and CSS Grid. Built as a practice project from online courses.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="handleSubmit(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your message..." required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Martin. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function handleSubmit(event) {
+  event.preventDefault();
+  alert("Thanks for reaching out! I'll get back to you soon.");
+}
+  </script>
+</body>
+</html>
